@@ -56,7 +56,7 @@ export default function Home() {
               <div className="mt-3">
                 <div className="flex justify-between items-center">
                   <h3 className="text-lg font-semibold">Bachelor of Computer Science</h3>
-                  <span ><div className="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold  border-transparent bg-secondary align-middle text-xs">Jun 2022 - Present</div></span>
+                  <span className="inline-flex items-center rounded-md border px-1 py-0.5 font-semibold  border-transparent bg-secondary align-middle text-xs lg:text-sm lg:px-2.5">Jun 2022 - Present</span>
                 </div>
                 <p className="text-(--site-bar-color)"> Rajamangala University of
                   Technology Krungthep</p>
