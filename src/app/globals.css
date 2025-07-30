@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --w-contraner: 48rem;
+  --site-bar-color: #0000008f;
+  --span-color: rgba(5, 5, 5, 0.692);
+  --secondary: oklch(97% 0 0);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: outfit;
+}
+
+.text-muted-foreground {
+    color: var(--site-bar-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}

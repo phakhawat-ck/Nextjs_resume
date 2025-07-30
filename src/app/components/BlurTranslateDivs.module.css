@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@keyframes blurTranslateIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    filter: blur(0);
+  }
+}
+
+.blurTranslateDiv {
+  opacity: 0;
+  animation-name: blurTranslateIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.blurTranslateDiv:nth-child(1) {
+  animation-delay: 0s;
+}
+.blurTranslateDiv:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.blurTranslateDiv:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.blurTranslateDiv:nth-child(4) {
+  animation-delay: 0.6s;
+}
