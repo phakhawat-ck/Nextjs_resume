@@ -4,7 +4,8 @@ import TechBadge from '@/app/components/TechBadge';
 export default function Home() {
   return (
     <div>
-      <main className="relative mx-auto scroll-my-12 p-4 md:p-16 print:p-12 ">
+      <main className="relative mx-auto scroll-my-12 p-4 md:p-16 print:p-12 max-h-screen">
+        
         <svg
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 h-full w-full fill-gray-400/30 stroke-gray-400/30 [mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] opacity-50 print:hidden"
@@ -43,9 +44,9 @@ export default function Home() {
               </div>
 
             </div>
-            <div className={styles.blurTranslateDiv}>
+            <div className={styles.blurTranslateDiv } >
               <h2 className="text-2xl font-semibold">Professional Summary</h2>
-              <p className="text-(--site-bar-color) mt-3"> Final-year Computer Science student with hands-on experience
+              <p className="text-(--site-bar-color) mt-3 ml-1.5"> Final-year Computer Science student with hands-on experience
                 building responsive web applications using HTML, CSS, and
                 React.js. Currently learning backend development using Node.js
                 and RESTful APIs. Actively seeking an internship as a Frontend or
@@ -53,10 +54,10 @@ export default function Home() {
             </div>
             <div className={styles.blurTranslateDiv}>
               <h2 className="text-2xl font-semibold">Education</h2>
-              <div className="mt-3">
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold">Bachelor of Computer Science</h3>
-                  <span className="inline-flex items-center rounded-md border px-1 py-0.5 font-semibold  border-transparent bg-secondary align-middle text-xs lg:text-sm lg:px-2.5">Jun 2022 - Present</span>
+              <div className="mt-3 ml-1.5">
+                <div className="flex justify-between items-start gap-2">
+                  <h3 className="text-lg font-semibold max-w-[70%]">Bachelor of Computer Science</h3>
+                  <span className="inline-flex items-center rounded-md border px-1 py-0.5 font-semibold  border-transparent bg-secondary align-middle text-xs lg:text-sm lg:px-2.5 whitespace-nowrap">Jun 2022 - Present</span>
                 </div>
                 <p className="text-(--site-bar-color)"> Rajamangala University of
                   Technology Krungthep</p>
@@ -64,7 +65,7 @@ export default function Home() {
             </div>
             <div className={styles.blurTranslateDiv}>
               <h2 className="text-2xl font-semibold">Skills</h2>
-              <div className="mt-3 flex flex-wrap gap-2">
+              <div className="mt-3 flex flex-wrap gap-2 ml-1.5">
                 <TechBadge iconSrc="/svgs/java-svgrepo-com.svg" label="Java" type="language" />
                 <TechBadge iconSrc="/svgs/python-svgrepo-com.svg" label="Python" type="language" />
                 <TechBadge iconSrc="/svgs/mysql-logo-svgrepo-com.svg" label="MySQL" type="database" />
@@ -89,6 +90,29 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <svg
+          aria-hidden="true"
+          className="rotate-180 pointer-events-none absolute inset-0 h-full w-full fill-gray-400/30 stroke-gray-400/30 [mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] opacity-50 print:hidden"
+        >
+          <defs>
+            <pattern
+              id="bgPattern"
+              width="20"
+              height="20"
+              patternUnits="userSpaceOnUse"
+              x="-1"
+              y="-1"
+            >
+              <path d="M.5 20V.5H20" fill="none" strokeDasharray="0"></path>
+            </pattern>
+          </defs>
+          <rect
+            width="100%"
+            height="100%"
+            strokeWidth="0"
+            fill="url(#bgPattern)"
+          ></rect>
+        </svg>
       </main>
     </div>
   );
