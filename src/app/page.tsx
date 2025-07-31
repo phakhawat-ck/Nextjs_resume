@@ -37,14 +37,14 @@ export default function Home() {
           <div className={styles.container}>
             <div className={styles.blurTranslateDiv}>
               <div className="grid grid-cols-1 md:grid-cols-[1fr_4fr] items-start gap-4">
-                <div className="hidden md:flex items-center justify-center border">
+                <div className="hidden md:flex items-center justify-center">
                   <img
                     src="/svgs/misc-14.svg"
                     alt="Profile"
                     className=""
                   />
                 </div>
-                <div className=" border w-full">
+                <div className="w-full">
                   <h1 className="text-3xl font-bold mb-3">Phakahwat Chomkul — <br />
                     <span className="text-lg font-light text-(--span-color)"> Final-year Computer Science Student</span>
                   </h1>
