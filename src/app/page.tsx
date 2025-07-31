@@ -48,7 +48,7 @@ export default function Home() {
                   <h1 className="text-3xl font-bold mb-3">Phakahwat Chomkul — <br />
                     <span className="text-lg font-light text-(--span-color)"> Final-year Computer Science Student</span>
                   </h1>
-                  <p className="text-(--site-bar-color)">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate molestias quaerat a, beatae doloribus aut dolorum voluptas nisi laboriosam ipsa praesentium, reiciendis culpa blanditiis odio sed consequatur dicta eaque molestiae.</p>
+                  <p className="text-(--site-bar-color) flex text-center"><img src="/svgs/location-pin-svgrepo-com.svg" alt="pin_icon" className="size-5 " />Live in Bangkok, Thailand</p>
                   <div className="flex gap-2 text-muted-foreground m-2">
                     <a href="mailto:phakhawat.ck@gmail.com" className="size-8 border flex items-center justify-center rounded-md bg-(--background) border-gray-300 hover:bg-gray-200 hover:text-(--foreground) transition "><svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" className="size-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path></svg></a>
                     <a href="https://github.com/phakhawat-ck" className="text-center px-3 border flex items-center justify-center rounded-md bg-(--background) border-gray-300 hover:bg-gray-200 hover:text-(--foreground) transition"><svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" className="size-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path></svg> <span className="px-1 text-center">/phakhawat-ck</span></a>
@@ -102,11 +102,10 @@ export default function Home() {
               <h2 className="text-2xl font-semibold mb-4">Project</h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
-                <CardProject label="React Protfolio" discription="Use React first time." demoLink="https://phakhawat.vercel.app/" projectLink="#"
+                <CardProject label="React — Protfolio" discription="Use React first time." demoLink="https://phakhawat.vercel.app/" projectLink="#"
                 tech={['React']} />
-                <CardProject label="roadmap.sh" discription="HTML" demoLink="#" projectLink="#" tech={['HTML', 'CSS']} />
                 <CardProject label="์Next.js — Resume" discription="Use ์Next.js  first time" demoLink="https://phakhawat-resume.vercel.app/" projectLink="#" tech={['Next.js']} />
-
+                <CardProject label="roadmap.sh" discription="HTML" demoLink="#" projectLink="#" tech={['HTML', 'CSS']} />
               </div>
             </div>
           </div>
