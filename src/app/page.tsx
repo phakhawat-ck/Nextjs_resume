@@ -5,10 +5,10 @@ import CardProject from '@/app/components/CardProject';
 export default function Home() {
   return (
     <div>
-      <main className="relative mx-auto scroll-my-12 p-4 md:p-16 print:p-12 max-h-screen">
+      <main className="relative mx-auto scroll-my-12 p-4 md:p-16 print:p-12 min-h-screen">
         <svg
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 h-screen w-full  stroke-gray-400/30  opacity-60 print:hidden "
+          className="pointer-events-none absolute inset-0 h-full w-full  stroke-gray-400/30  opacity-60 print:hidden "
           style={{
             maskImage: 'linear-gradient(to bottom right,  white , transparent , white)'
           }}
@@ -33,8 +33,6 @@ export default function Home() {
             fill="url(#bgPattern)"
           ></rect>
         </svg>
-
-
         <section className="relative mx-auto w-full max-w-(--w-contraner) space-y-7 print:space-y-6">
           <div className={styles.container}>
             <div className={styles.blurTranslateDiv}>
@@ -103,15 +101,15 @@ export default function Home() {
             <div className={styles.blurTranslateDiv}>
               <h2 className="text-2xl font-semibold mb-4">Project</h2>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <CardProject label="roadmap.sh-section" discription="HTML" />
-                <CardProject label="Frontend_cloneweb" discription="HTML" />
-                <CardProject label="Another Project" discription="CSS" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+                <CardProject label="React Protfolio" discription="Use React first time." demoLink="https://phakhawat.vercel.app/" projectLink="#"
+                tech={['React']} />
+                <CardProject label="roadmap.sh" discription="HTML" demoLink="#" projectLink="#" tech={['HTML', 'CSS']} />
+
               </div>
             </div>
           </div>
         </section>
-
       </main>
     </div>
   );
