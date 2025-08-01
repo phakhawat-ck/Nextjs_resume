@@ -19,7 +19,7 @@ export default function CardProject({
       onClick={() => {
         if (projectLink) window.open(projectLink, "_blank");
       }}
-      className="cursor-pointer border rounded-lg p-4 bg-white border-gray-200 transition-all duration-300 hover:bg-gray-50 hover:scale-110 shadow-sm hover:shadow-md"
+      className="cursor-pointer border rounded-lg p-4 bg-white border-gray-200 transition-all duration-300 hover:bg-gray-50 hover:scale-110 shadow-sm hover:shadow-md break-inside-avoid mb-4"
     >
       <h3 className="text-lg font-semibold">{label}</h3>
       <p className="text-sm text-gray-600 mt-2">{discription}</p>
