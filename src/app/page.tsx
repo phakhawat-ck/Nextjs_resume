@@ -8,31 +8,54 @@ export default function Home() {
       <main className="relative mx-auto scroll-my-12 p-4 md:p-16 print:p-12 min-h-screen">
         <svg
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 h-full w-full  stroke-gray-400/30  opacity-60 print:hidden "
+          className="pointer-events-none absolute inset-0 h-full w-full stroke-gray-400/20 opacity-20 print:hidden"
           style={{
-            maskImage:
-              "linear-gradient(to bottom right,  white , transparent , white)",
+            maskImage: "linear-gradient(to bottom right, white, transparent, white)",
           }}
         >
           <defs>
             <pattern
-              id="bgPattern"
-              width="20"
-              height="20"
+              id="gridPattern"
+              width="100"
+              height="60"
               patternUnits="userSpaceOnUse"
-              x="-1"
-              y="-1"
             >
-              <path d="M.5 20V.5H20" fill="none" strokeDasharray="0"></path>
+              <path
+                d="M0 0 H100"
+                stroke="currentColor"
+                strokeWidth="1"
+                strokeDasharray="4 4"
+                style={{
+                  animation: "drawLine 2s linear forwards",
+                  strokeDashoffset: 100, 
+                }}
+              />
+              <path
+                d="M0 0 V60"
+                stroke="currentColor"
+                strokeWidth="1"
+                strokeDasharray="4 4"
+                style={{
+                  animation: "drawLine 2s linear 0.5s forwards", 
+                  strokeDashoffset: 100, 
+                }}
+              />
             </pattern>
           </defs>
-          <rect
-            width="100%"
-            height="100%"
-            strokeWidth="0"
-            fill="url(#bgPattern)"
-          ></rect>
+
+          <rect width="100%" height="100%" fill="url(#gridPattern)" />
+
+          <style>{`
+            @keyframes drawLine {
+              to {
+                stroke-dashoffset: 0; /* ทำให้เส้นแสดงเต็มที่ */
+              }
+            }
+      `}</style>
         </svg>
+
+
+
         <section className="relative mx-auto w-full max-w-(--w-contraner) space-y-7 print:space-y-6">
           <div className={styles.container}>
             <div className={styles.blurTranslateDiv}>
@@ -235,7 +258,7 @@ export default function Home() {
                   projectLink="https://github.com/phakhawat-ck/Frontend_cloneweb/tree/main/Smartmag"
                   tech={["HTML", "CSS"]}
                 />
-                
+
               </div>
             </div>
           </div>
